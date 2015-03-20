@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+	<title>24Fundraiser Admin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/compiled/theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/ionicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/compiled/customize.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/shepherd.css" />
+
+	<!-- javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/jquery.slimscroll.js"></script>
+	<script src="js/vendor/shepherd.min.js"></script>
+	<script src="js/theme.js"></script>
+	<script src="js/custom.js"></script>
+
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div id="wrapper">
+		<div id="sidebar-default" class="main-sidebar">
+			<div class="current-user">
+				<a href="index.html" class="home"><i class="fa fa-home"></i></a>
+                <a href="help.html" class="help">Help</a>
+                <a href="account-profile.html" class="name">Account <i class="fa fa-chevron-down"></i></a>
+				<ul class="menu">
+					<li>
+						<a href="account-profile.html">Account settings</a>
+					</li>
+					<li>
+						<a href="account-billing.html">Billing</a>
+					</li>
+                    <li>
+						<a href="pricing.html">Pricing</a>
+					</li>
+					<li>
+						<a href="account-notifications.html">Notifications</a>
+					</li>
+					<li>
+						<a href="account-integrations.html">Integrations</a>
+					</li>
+					<li>
+						<a href="account-support.html">Help / Support</a>
+					</li>
+					<li>
+						<a href="signup.html">Sign out</a>
+					</li>
+				</ul>
+			</div>
+			<div class="inner-sidebar">
+			<div class="menu-section">
+				<h3>General</h3>
+				<ul>
+					<li>
+						<a href="index.html">
+							<i class="ion-android-earth"></i> 
+							<span>Dashboard</span>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>Donor Management</h3>
+				<ul>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-person-stalker"></i> <span>Members</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="members.html">All Members</a></li>
+							<li><a href="all-transactions.html">All Transactions</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="fa fa-envelope"></i> <span>Mailbox</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="inbox-mail.html">Inbox</a></li>
+							<li><a href="email-templates.html">Email templates</a></li>							
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>Campaigns</h3>
+				<ul>
+					<li>
+						<a href="payment.html">
+							<i class="fa fa-money"></i><span>Payment Pages </span>							
+						</a>						
+					</li>
+					<li>
+						<a href="#">
+							<i class="ion-usb"></i> <span>Peer-to-peer</span>
+						</a>						
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-ticket"></i> <span>Tickets</span>
+						</a>						
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-legal"></i> <span>Auctions</span>
+						</a>						
+					</li>
+				</ul>
+				<div class="step-progress">
+						<a href="steps.html" class="link">Steps to launch</a>
+						<div id="progress_bar" class="ui-progress-bar ui-container">
+							<div class="ui-progress" style="width: 40%;">
+								<span class="ui-label"><b class="value">40%</b></span>
+							</div><!-- .ui-progress -->
+						</div><!-- #progress_bar -->
+					</div><!--end step-progress-->
+			</div>
+			</div><!-- end inner-sidebar -->
+		</div><!--main-sidebar-->
+        
+    <div id="content">
+        <div id="ui" class="active-header"> <!-- remove .active-header class form this when u Activate Account -->
+			
+            <div class="activebar">
+            	<div class="active-inner clearfix">
+                    <a class="active-account btn btn-danger pull-left" href="pricing.html">
+                        <span>Activate Account</span>
+                    </a>
+                    <p>Explore 24Fundraiser for free. Activate your account when you're ready to accept payments. <a href="steps.html">Steps to launch</a></p>
+                </div>
+            </div>	
+			<div class="menubar">
+				<div class="sidebar-toggler visible-xs">
+					<i class="ion-navicon"></i>
+				</div>
+				
+				<div class="page-title">
+					Guided Tour
+				</div>
+			</div>			
+			<div class="content-wrapper">
+				
+				<section class="intro">
+					<h4>Account</h4>
+					<a href="#" class="tour-first-step">Mange your profile</a>					
+				</section>
+				<section class="intro">
+					<h4>Payment Pages</h4>
+					<a href="#" class="tour-second-step">Creating a payment form</a>
+					
+				</section>
+				<section class="intro">
+					<h4>Members</h4>
+					<a href="#" class="tour-third-step">Your Donor Manager</a>
+					
+				</section>
+				<section class="intro">
+					<h4>Mailbox</h4>
+					<a href="#" class="tour-four-step">Send bulk emails</a>
+					
+				</section>
+				<section class="intro">
+					<h4>Step to Launch(In the lower left nav)</h4>
+					<a href="#" class="tour-five-step">Helpful guide</a>
+					
+				</section>
+				<section class="intro">
+					<h4>Activate Account</h4>
+					<a href="#" class="tour-six-step">Ready to start</a>
+					
+				</section>
+				<section class="tour">
+					<h4>
+						Guided Tour
+						<small>
+							Useful to highlight some important features to your users by focusing on a section of the page.
+						</small>
+					</h4>
+
+					<a href="#" class="start-tour">Start the tour</a>
+				</section>
+								
+			</div><!--content-wrapper -->
+		</div>
+	</div><!--#content -->
+</div><!--#wrapper -->
+<script type="text/javascript">
+	$(function(){
+		// Guided Tour in app with shepherd.js
+			var tour;
+
+			tour = new Shepherd.Tour({
+			  	defaults: {
+					classes: 'shepherd-element shepherd-open shepherd-theme-arrows',
+					showCancelLink: true
+			    }
+			});
+
+			tour.addStep('example-step', {
+			  	text: 'Hear you can mange your profile, billing, notifications, integrations and any other account settings.',
+			  	attachTo: {
+			  		element: '.tour-first-step',
+			  		on: 'right'
+			  	},
+			  	buttons: [
+			  	{
+			      	text: 'Exit',
+			      	classes: 'btn btn-default',
+			    	action: tour.cancel
+			    },
+			    {
+			    	text: 'Next',
+			    	classes: 'btn btn-primary',
+			      	action: tour.next
+			    }]
+			});
+
+			tour.addStep('example-step', {
+			  	text: 'Start by creating a payment form for your website so you can start collecting recurring and one-time donations. ',
+			  	attachTo: {
+			  		element: '.tour-second-step',
+			  		on: 'bottom'
+			  	},
+			  	buttons: [
+			  	{
+			      	text: 'Back',
+			      	classes: 'btn btn-default',
+			    	action: tour.back
+			    },
+			    {
+			    	text: 'Next',
+			    	classes: 'btn btn-primary',
+			      	action: tour.next
+			    }]
+			});
+
+			tour.addStep('example-step', {
+			  	text: 'The Members section is your Donor Manager. From here you can keep track of all your donors and transactions. ',
+			  	attachTo: {
+			  		element: '.tour-third-step',
+			  		on: 'left'
+			  	},
+			  	buttons: [
+			  	{
+			      	text: 'Back',
+			      	classes: 'btn btn-default',
+			    	action: tour.back
+			    },
+			    {
+			    	text: 'Next',
+			    	classes: 'btn btn-primary',
+			      	action: tour.next
+			    }]
+			});
+			tour.addStep('example-step', {
+			  	text: 'Once your donor database starts to grow, use the mailbox to send bulk emails. ',
+			  	attachTo: {
+			  		element: '.tour-four-step',
+			  		on: 'bottom'
+			  	},
+			  	buttons: [
+			  	{
+			      	text: 'Back',
+			      	classes: 'btn btn-default',
+			    	action: tour.back
+			    },
+			    {
+			    	text: 'Next',
+			    	classes: 'btn btn-primary',
+			      	action: tour.next
+			    }]
+			});
+			tour.addStep('example-step', {
+			  	text: 'This is a helpful guide to completeyour account so you can start collecting donations. ',
+			  	attachTo: {
+			  		element: '.tour-five-step',
+			  		on: 'left'
+			  	},
+			  	buttons: [
+			  	{
+			      	text: 'Back',
+			      	classes: 'btn btn-default',
+			    	action: tour.back
+			    },
+			    {
+			    	text: 'Next',
+			    	classes: 'btn btn-primary',
+			      	action: tour.next
+			    }]
+			});
+
+			tour.addStep('example-step', {
+			  	text: 'When you’re ready to start collecting real donations, click here to Activate your account and make your payment forms live. ',
+			  	attachTo: {
+			  		element: '.tour-six-step',
+			  		on: 'bottom'
+			  	},
+			  	buttons: [
+			  	{
+			      	text: 'Back',
+			      	classes: 'btn btn-default',
+			    	action: tour.back
+			    },
+			    {
+			    	text: 'Done',
+			    	classes: 'btn btn-success',
+			      	action: tour.next
+			    }]
+			});
+
+			$(".start-tour").click(function (e) {
+				e.preventDefault();
+				tour.start();
+			});
+
+		
+	});
+	</script>
+</body>
+</html>

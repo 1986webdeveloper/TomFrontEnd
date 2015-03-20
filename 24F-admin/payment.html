@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+	<title>24Fundraiser Admin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/compiled/theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/ionicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/compiled/customize.css" />
+
+	<!-- javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/jquery.slimscroll.js"></script>
+	<script src="js/theme.js"></script>
+	<script src="js/custom.js"></script>
+
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div id="wrapper">
+		<div id="sidebar-default" class="main-sidebar">
+			<div class="current-user">
+				<a href="index.html" class="home"><i class="fa fa-home"></i></a>
+                <a href="help.html" class="help">Help</a>
+                <a href="account-profile.html" class="name">Account <i class="fa fa-chevron-down"></i></a>
+				<ul class="menu">
+					<li>
+						<a href="account-profile.html">Account settings</a>
+					</li>
+					<li>
+						<a href="account-billing.html">Billing</a>
+					</li>
+                    <li>
+						<a href="pricing.html">Pricing</a>
+					</li>
+					<li>
+						<a href="account-notifications.html">Notifications</a>
+					</li>
+					<li>
+						<a href="account-integrations.html">Integrations</a>
+					</li>
+					<li>
+						<a href="account-support.html">Help / Support</a>
+					</li>
+					<li>
+						<a href="signup.html">Sign out</a>
+					</li>
+				</ul>
+			</div>
+			<div class="inner-sidebar">
+				<div class="menu-section">
+					<h3>General</h3>
+					<ul>
+						<li>
+							<a href="index.html">
+								<i class="ion-android-earth"></i> 
+								<span>Dashboard</span>
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="menu-section">
+					<h3>Donor Management</h3>
+					<ul>
+						<li>
+							<a href="account.html" data-toggle="sidebar">
+								<i class="ion-person-stalker"></i> <span>Members</span>
+								<i class="fa fa-chevron-down"></i>
+							</a>
+							<ul class="submenu">
+								<li><a href="members.html">All Members</a></li>
+								<li><a href="all-transactions.html">All Transactions</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="account.html" data-toggle="sidebar">
+								<i class="fa fa-envelope"></i> <span>Mailbox</span>
+								<i class="fa fa-chevron-down"></i>
+							</a>
+							<ul class="submenu">
+								<li><a href="inbox-mail.html">Inbox</a></li>
+								<li><a href="email-templates.html">Email templates</a></li>
+								
+							</ul>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="menu-section">
+					<h3>Campaigns</h3>
+					<ul>
+						<li>
+							<a href="payment.html" class="active">
+								<i class="fa fa-money"></i><span>Payment Pages </span>							
+							</a>						
+						</li>
+						<li>
+							<a href="#">
+								<i class="ion-usb"></i> <span>Peer-to-peer</span>
+							</a>						
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-ticket"></i> <span>Tickets</span>
+							</a>						
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-legal"></i> <span>Auctions</span>
+							</a>						
+						</li>
+					</ul>
+					<div class="step-progress">
+						<a href="steps.html" class="link">Steps to launch</a>
+						<div id="progress_bar" class="ui-progress-bar ui-container">
+							<div class="ui-progress" style="width: 40%;">
+								<span class="ui-label"><b class="value">40%</b></span>
+							</div><!-- .ui-progress -->
+						</div><!-- #progress_bar -->
+					</div><!--end step-progress-->
+				</div>
+			</div><!-- end inner-sidebar -->
+			<div class="bottom-menu hidden-sm">
+				<ul>
+					<li><a href="account-support.html"><i class="ion-help"></i></a></li>
+					<li>
+						<a href="inbox-mail.html">
+							<i class="ion-archive"></i>
+							<span class="flag"></span>
+						</a>
+						<ul class="menu">
+							<li><a href="#">5 unread messages</a></li>
+							<li><a href="#">12 tasks completed</a></li>
+							<!-- <li><a href="#">3 features added</a></li> -->
+						</ul>
+					</li>
+					<li><a href="signup.html"><i class="ion-log-out"></i></a></li>
+				</ul>
+			</div>
+		</div><!--main-sidebar-->
+        
+        <div id="content">
+            <div id="projects" class="active-header"> <!-- remove .active-header class form this when u Activate Account -->
+			
+            <div class="activebar">
+            	<div class="active-inner clearfix">
+                    <a class="active-account btn btn-danger pull-left" href="pricing.html">
+                        <span>Activate Account</span>
+                    </a>
+                    <p>Explore 24Fundraiser for free. Activate your account when you're ready to accept payments. <a href="steps.html">Steps to launch</a></p>
+                </div>
+            </div>
+			<div class="menubar">
+				<div class="sidebar-toggler visible-xs">
+					<i class="ion-navicon"></i>
+				</div>
+
+				<div class="page-title">
+					My Pages					
+				</div>
+				<a href="form.html" class="new-user btn btn-success pull-right">
+					<span>Add Pages</span>
+				</a>
+			</div>
+
+			<div class="content-wrapper clearfix">
+				<div class="row project-list">
+					<div class="project new">
+						<a href="create-payment-page.html">
+							<i class="ion-ios7-plus-outline"></i>
+							<span class="info">
+								Create a New payment Pages
+							</span>
+						</a>
+					</div>
+					<div class="project">
+						<div class="info">
+							<div class="name">Page Name</div>
+							<div class="category">Design & Development</div>
+							<div class="last-update">
+								Last updated 3 hours ago
+							</div>
+						</div>
+						<div class="members">
+							<img src="images/avatars/3.jpg" />
+							<img src="images/avatars/7.jpg" />
+							<img src="images/avatars/14.jpg" />
+							<img src="images/avatars/15.jpg" />
+							
+							<a href="#" class="add-more">
+								<i class="fa fa-plus"></i>
+							</a>
+							<ul class="menu">
+								<li><a href="#">Invite a new user</a></li>
+								<li><a href="#">Change name</a></li>
+								<li><a href="#">Delete page</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="project">
+						<div class="info">
+							<div class="name">iOS App</div>
+							<div class="category">Mobile Development</div>
+							<div class="last-update">
+								Last updated 1 week ago
+							</div>
+						</div>
+						<div class="members">
+							<img src="images/avatars/6.jpg" />
+							<img src="images/avatars/4.jpg" />
+							<img src="images/avatars/10.jpg" />
+
+							<a href="#" class="add-more">
+								<i class="fa fa-plus"></i>
+							</a>
+							<ul class="menu">
+								<li><a href="#">Invite a new user</a></li>
+								<li><a href="#">Change name</a></li>
+								<li><a href="#">Delete project</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="project">
+						<div class="info">
+							<div class="name">Marketing Writeup</div>
+							<div class="category">Marketing</div>
+							<div class="last-update">
+								Last updated 2 days ago
+							</div>
+						</div>
+						<div class="members">
+							<img src="images/avatars/4.jpg" />
+							<img src="images/avatars/8.jpg" />
+							<img src="images/avatars/9.jpg" />
+							<img src="images/avatars/16.jpg" />
+
+							<a href="#" class="add-more">
+								<i class="fa fa-plus"></i>
+							</a>
+							<ul class="menu">
+								<li><a href="#">Invite a new user</a></li>
+								<li><a href="#">Change name</a></li>
+								<li><a href="#">Delete project</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="project">
+						<div class="info">
+							<div class="name">New Blog Posts</div>
+							<div class="category">Writing</div>
+							<div class="last-update">
+								Last updated 13 hours ago
+							</div>
+						</div>
+						<div class="members">
+							<img src="images/avatars/10.jpg" />
+							<img src="images/avatars/11.jpg" />
+							<img src="images/avatars/12.jpg" />
+							<img src="images/avatars/17.jpg" />
+
+							<a href="#" class="add-more">
+								<i class="fa fa-plus"></i>
+							</a>
+							<ul class="menu">
+								<li><a href="#">Invite a new user</a></li>
+								<li><a href="#">Change name</a></li>
+								<li><a href="#">Delete project</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="project">
+						<div class="info">
+							<div class="name">New Album Cover</div>
+							<div class="category">Design</div>
+							<div class="last-update">
+								Last updated 1 day ago
+							</div>
+						</div>
+						<div class="members">
+							<img src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" />
+							<img src="https://s3.amazonaws.com/uifaces/faces/twitter/krystalfister/128.jpg" />
+
+							<a href="#" class="add-more">
+								<i class="fa fa-plus"></i>
+							</a>
+							<ul class="menu">
+								<li><a href="#">Invite a new user</a></li>
+								<li><a href="#">Change name</a></li>
+								<li><a href="#">Delete project</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="project">
+						<div class="info">
+							<div class="name">New Theme Development</div>
+							<div class="category">Design</div>
+							<div class="last-update">
+								Last updated 11 day ago
+							</div>
+						</div>
+						<div class="members">
+							<img src="images/avatars/8.jpg" />
+							<img src="images/avatars/5.jpg" />
+							<img src="images/avatars/13.jpg" />
+
+							<a href="#" class="add-more">
+								<i class="fa fa-plus"></i>
+							</a>
+							<ul class="menu">
+								<li><a href="#">Invite a new user</a></li>
+								<li><a href="#">Change name</a></li>
+								<li><a href="#">Delete project</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div><!--content-wrapper -->
+		</div>
+	</div><!--#content -->
+</div><!--#wrapper -->
+</body>
+</html>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+	<title>24Fundraiser Admin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/compiled/theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/ionicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css" />    
+	<link rel="stylesheet" type="text/css" href="css/compiled/customize.css" />
+
+	<!-- javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/jquery.slimscroll.js"></script>
+	<script src="js/theme.js"></script>
+	<script src="js/custom.js"></script>
+
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body >
+	<div id="wrapper">
+		<div id="sidebar-default" class="main-sidebar">
+			<div class="current-user">
+				<a href="index.html" class="home"><i class="fa fa-home"></i></a>
+                <a href="help.html" class="help">Help</a>
+                <a href="account-profile.html" class="name">Account <i class="fa fa-chevron-down"></i></a>
+				<ul class="menu">
+					<li>
+						<a href="account-profile.html">Account settings</a>
+					</li>
+					<li>
+						<a href="account-billing.html">Billing</a>
+					</li>
+                    <li>
+						<a href="pricing.html">Pricing</a>
+					</li>
+					<li>
+						<a href="account-notifications.html">Notifications</a>
+					</li>
+					<li>
+						<a href="account-integrations.html">Integrations</a>
+					</li>
+					<li>
+						<a href="account-support.html">Help / Support</a>
+					</li>
+					<li>
+						<a href="signup.html">Sign out</a>
+					</li>
+				</ul>
+			</div>
+			<div class="inner-sidebar">
+				<div class="menu-section">
+					<h3>General</h3>
+					<ul>
+						<li>
+							<a href="index.html">
+								<i class="ion-android-earth"></i> 
+								<span>Dashboard</span>
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="menu-section">
+					<h3>Donor Management</h3>
+					<ul>
+						<li>
+							<a href="account.html" data-toggle="sidebar">
+								<i class="ion-person-stalker"></i> <span>Members</span>
+								<i class="fa fa-chevron-down"></i>
+							</a>
+							<ul class="submenu">
+								<li><a href="members.html">All Members</a></li>
+								<li><a href="all-transactions.html">All Transactions</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="account.html" data-toggle="sidebar">
+								<i class="fa fa-envelope"></i> <span>Mailbox</span>
+								<i class="fa fa-chevron-down"></i>
+							</a>
+							<ul class="submenu">
+								<li><a href="inbox-mail.html">Inbox</a></li>
+								<li><a href="email-templates.html">Email templates</a></li>
+								
+							</ul>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="menu-section">
+					<h3>Campaigns</h3>
+					<ul>
+						<li>
+							<a href="payment.html">
+								<i class="fa fa-money"></i><span>Payment Pages </span>							
+							</a>						
+						</li>
+						<li>
+							<a href="#">
+								<i class="ion-usb"></i> <span>Peer-to-peer</span>
+							</a>						
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-ticket"></i> <span>Tickets</span>
+							</a>						
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-legal"></i> <span>Auctions</span>
+							</a>						
+						</li>
+					</ul>
+					<div class="step-progress">
+						<a href="steps.html" class="link">Steps to launch</a>
+						<div id="progress_bar" class="ui-progress-bar ui-container">
+							<div class="ui-progress" style="width: 40%;">
+								<span class="ui-label"><b class="value">40%</b></span>
+							</div><!-- .ui-progress -->
+						</div><!-- #progress_bar -->
+					</div><!--end step-progress-->
+				</div>
+			</div><!-- end inner-sidebar -->
+			<div class="bottom-menu hidden-sm">
+				<ul>
+					<li><a href="account-support.html"><i class="ion-help"></i></a></li>
+					<li>
+						<a href="inbox-mail.html">
+							<i class="ion-archive"></i>
+							<span class="flag"></span>
+						</a>
+						<ul class="menu">
+							<li><a href="#">5 unread messages</a></li>
+							<li><a href="#">12 tasks completed</a></li>
+							<!-- <li><a href="#">3 features added</a></li> -->
+						</ul>
+					</li>
+					<li><a href="signup.html"><i class="ion-log-out"></i></a></li>
+				</ul>
+			</div>
+		</div><!--main-sidebar-->
+        
+		<div id="content">
+			<div id="wizard" class="active-header"> <!-- remove .active-header class form this when u Activate Account -->
+			
+            <div class="activebar">
+            	<div class="active-inner clearfix">
+                    <a class="active-account btn btn-danger pull-left" href="pricing.html">
+                        <span>Activate Account</span>
+                    </a>
+                    <p>Explore 24Fundraiser for free. Activate your account when you're ready to accept payments. <a href="steps.html">Steps to launch</a></p>
+                </div>
+            </div>
+
+			<div class="content-wrapper">
+				<div class="header">
+					<div class="sidebar-toggler visible-xs">
+						<i class="ion-navicon"></i>
+					</div>
+
+					<div class="steps clearfix">
+						<div class="step active">
+							Basic Info
+							<span></span>
+						</div>
+						<div class="step">
+							Payment Form
+							<span></span>
+						</div>
+						<div class="step">
+							Additional Questions
+							<span></span>
+						</div>
+						<div class="step">
+							Finish
+							<span></span>
+						</div>
+					</div>
+				</div>
+
+				<section class="form-wizard">
+
+					<form id="new-customer" method="post" action="#" role="form">
+						<div class="step active animated fadeInRightStep">
+							<div class="form-group">
+							    <label>Title</label>
+							    <input type="text" class="form-control" name="customer[title]" />
+						  	</div>
+						  	<div class="form-group desc-radio">
+							    <label>Add Description</label><br/>
+							   <label class="radio-inline">
+								  <input type="radio" name="radioOption" id="yes" value="option1"> Yes
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="radioOption" id="no" value="option2"> No
+								</label><br/>
+								<small><i>Description or Instructions payers see when checking out.</i></small>
+						  	</div>
+						  	
+						  	<div class="form-group" id="yes-description">
+							    <label for="type-desc">Type a Description</label>
+							    <textarea class="form-control" rows="4" name="customer[notes]"></textarea>
+								
+						  	</div>
+							<div class="form-group">	
+								<label>Deposit Funds</label>
+								<select class="form-control">
+								  <option selected>Default</option>
+								  <option>100</option>
+								  <option>200</option>
+								  <option>300</option>
+								  <option>400</option>
+								</select>
+							</div>
+							
+							<div class="form-group noti-email">
+							    <label>Additional Notifications </label><br/>
+							   <label class="radio-inline">
+								  <input type="radio" name="radioOption" id="yes-email" value="option1"> Yes
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="radioOption" id="no-email" value="option2"> No
+								</label>
+						  	</div>
+							
+							<div class="form-group" id="yes-notifications">
+							    <label for="type-desc">Email Address</label>
+							    <input type="text" class="form-control" />
+								<a href="javascript:void(0)" id="add-email" class="btn btn-default">Add more email</a>								
+						  	</div>
+						  	<div class="form-group form-actions">
+					      		<button type="submit" class="button" data-step="2">
+					      			<span>Next Step <i class="fa fa-angle-double-right"></i></span>
+					      		</button>
+						  	</div>
+						</div>
+						<div class="step">
+							<div class="form-group">
+							    <label>How is amount decided?</label><br/>
+							    <label class="radio-inline">
+								  <input type="radio" name="r1" id="inlineRadio1" value="option1"> Set Specific Amount(s)
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="r1" id="inlineRadio2" value="option2"> Decided at Checkout
+								</label>
+						  	</div>
+						  	<div class="form-group">
+							    <label>Add suggested amount?</label><br/>
+							    <label class="radio-inline">
+								  <input type="radio" name="r2" id="inlineYes" value="yes"> Yes
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="r2" id="inlineNo" value="no" checked> No
+								</label>
+								
+						  	</div>
+						  	<div class="form-group charge-fee">
+							    <label>Charge an additional fee?</label><br/>
+							    <label class="radio-inline">
+								  <input type="radio" name="r3" id="yes-fee" value="yes"> Yes
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="r3" id="no-fee" value="no" checked> No
+								</label><br/>
+								<small><i>If frequency is recurring, fee is recurring. If frequency is one-time, fee is one-time.</i></small>
+						  	</div>
+							
+							<div id="additional-fee">
+								<div class="form-group">
+									<label>Fee Name</label>
+									<input type="text" class="form-control">
+									<small><i>For example: "Shipping Fee"</i></small>
+								</div>
+								<div class="form-group fee-type">
+									<label>Fee Type</label><br/>
+									<label class="radio-inline">
+									  <input type="radio" name="radio-amt" id="amnt-fee" value="Amount" checked> Amount
+									</label>
+									<label class="radio-inline">
+									  <input type="radio" name="radio-amt" id="percent-fee" value="Percentage" > Percentage
+									</label>
+								</div>
+								
+								<div class="form-group show-amount active">
+									<label>What Amount</label>
+									<div class="input-group col-sm-4">
+									  <div class="input-group-addon"><b>$</b></div>
+									  <input type="text" class="form-control" id="exampleInputAmount" placeholder="0.00">
+									</div>
+								</div>
+								<div class="form-group show-percentage">
+									<label>What Percentage</label>
+									<div class="input-group col-sm-4">									 
+									  <input type="text" class="form-control" id="exampleInputAmount" placeholder="">
+									   <div class="input-group-addon"><b>%</b></div>
+									</div>
+								</div>
+							</div> 
+							
+							<div class="form-group">
+							    <label>Payment Button Text</label>
+							    <input type="text" class="form-control" placeholder="Continue" />
+						  	</div>
+							
+							<div class="form-group frequency-select">
+							    <label>Frequency</label>
+							    <select class="form-control">
+								  <option value="one-time">One Time</option>
+								  <option value="recurring">Recurring</option>
+								  <option value="decided-at-checkout">Decided at Checkout</option>
+								</select>
+						  	</div>
+							
+							<div id="recurring-frequency" class="box">
+								<div class="form-group recurring-options">
+									<label>How are recurring options decided?</label><br/>									
+									<label class="radio-inline">
+									  <input type="radio" name="radio-recurring" id="decided-checkout" value="Decided at Checkout" checked> Decided at Checkout
+									</label>
+									<label class="radio-inline">
+									  <input type="radio" name="radio-recurring" id="set-recurring" value="Set Recurring Options" > Set Recurring Options
+									</label>
+								</div>
+								
+								<div id="set-recurring-option">
+									<div class="form-group">
+										<label>Recurring Period</label>
+										<select class="form-control">
+										  <option value="" selected>Monthly</option>
+										  <option value="">Weekly</option>
+										  <option value="">Yearly</option>
+										</select>
+									</div>
+									
+									<div class="form-group">
+										<label>Recurring Day</label>
+										<select class="form-control">
+										  <option value="" selected>Day Payer Checks Out</option>
+										  <option value=""></option>
+										  <option value=""></option>
+										</select>
+									</div>
+									
+									<div class="form-group duration-select">
+										<label>Duration</label>
+										<select class="form-control">
+										  <option value="indefinite" selected>Indefinite</option>
+										  <option value="fixed-amt-time">Fixed Amount of Time</option>
+										</select>
+									</div>
+									
+									<div class="form-group fixed-amnt-time" >
+										<label>Number of Periods</label>
+										<input type="text" class="form-control" >
+									</div>
+								
+								</div>								
+							</div>
+							
+							<div class="form-group">
+									<label>Include an upfront one-time amount?</label><br/>									
+									<label class="radio-inline">
+									  <input type="radio" name="radio-recurring" id="recurring-yes" value="Yes" > Yes
+									</label>
+									<label class="radio-inline">
+									  <input type="radio" name="radio-recurring" id="recurring-no" value="No" checked> No
+									</label>
+								</div>
+							
+						  	<div class="form-group form-actions">
+						  		<a class="button" href="#" data-step="1">
+						  			<span><i class="fa fa-angle-double-left"></i> Back</span>
+						  		</a>
+					      		<button type="submit" class="button" data-step="3">
+					      			<span>Next Step <i class="fa fa-angle-double-right"></i></span>
+					      		</button>
+						  	</div>
+						</div>
+						<div class="step">
+							<div class="form-group payer-more-info">
+							    <label>Gather more information from payer?</label><br/>
+							    <label class="radio-inline">
+								  <input type="radio" name="infoRadio" id="more-info-yes" value="Yes"> Yes
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="infoRadio" id="more-info-no" value="No"> No
+								</label><br/>
+								<small><i>You can ask payers for additional custom information during checkout.</i></small>
+						  	</div>
+							
+							<div class="add-custom-field  col-sm-12 eat-both">
+								<label class="col-sm-12 eat-both">Custom Field(s)</label>
+								<div class="col-sm-6 eat-both">
+									<table class="table payer-custom-field">
+										<tbody>
+											<tr>
+												<td width="80%">Test</td>
+												<td width="20%">
+													<a href="#" class="edit-field" title="Edit"><i class="ion-edit"></i></a>
+													<a href="#" class="delete-field" title="Delete"><i class="ion-trash-a"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<td>Test 2</td>
+												<td>
+													<a href="#" class="edit-field"><i class="ion-edit"></i></a>
+													<a href="#" class="delete-field"><i class="ion-trash-a"></i></a>
+												</td>
+											</tr>
+										</tbody>
+									</table>								
+								</div>
+								
+								<div  class="col-sm-12 eat-both">
+									<a href="javascript:void(0)" class="btn btn-primary" data-toggle="modal" data-target="#add-field-popup">Add Field</a>
+									<a href="#" class="btn btn-default">Reorder Fields</a>
+								</div>						
+							</div>
+							<h4>Confirmation</h4>
+							<div class="form-group confirm-radio">
+								<label for="">After the payer checks out</label><br/>
+									<label class="radio-inline">
+									  <input type="radio" name="radio-confirm" id="display-msg" value="Display a Message"> Display a Message
+									</label>
+									<label class="radio-inline">
+									  <input type="radio" name="radio-confirm" id="redirect-web-page" value="Redirect to another web page"> Redirect to another web page
+									</label>
+								</div>
+							
+							<div class="form-group">
+								<label for="">Confirmation Page Message</label>
+									<textarea class="form-control" rows="3"></textarea>
+									<small><i>By default, we display "Approved." You can enter an addotional custom message.<br/>Want more formatting control?</i></small>
+							</div>
+							
+							<div class="form-group">
+								<label for="">Custom Email Message</label>
+									<textarea class="form-control" rows="3"></textarea>
+									<small><i>This optional note appears in the Successful Payment email notification for this specific form, if the notification is enabled.</i></small>
+							</div>
+														
+							
+							<div class="form-group form-actions clearfix">
+						  		<a data-step="2" href="#" class="button">
+						  			<span><i class="fa fa-angle-double-left"></i> Back</span>
+						  		</a>
+					      		<button data-step="4" class="button" type="submit">
+					      			<span>Make payment <i class="fa fa-angle-double-right"></i></span>
+					      		</button>
+						  	</div>
+						</div>						
+						
+						<div class="step">
+							<div class="success">
+								<i class="ion-checkmark-circled"></i>
+								<h3>
+									Your page has been configured successfully!
+								</h3>
+								<a href="wizard.html" class="button">
+									<span>Go to my page dashboard</span>
+								</a>
+							</div>
+						</div>
+					</form>
+
+				</section>
+
+			</div><!--content-wrapper -->
+		</div>
+	</div><!--#content -->
+</div><!--#wrapper -->
+<div class="modal fade" id="add-field-popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Custom Form Field</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="">Custom Field Title</label>
+                        <input type="type" class="form-control" placeholder="Test">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Key</label><small style="margin-left:5px;"><i>A unique identifier for each field. Use only letters, numbers or underscore.<br/>Example: shipping_address</i></small>
+                        <input type="type" class="form-control" placeholder="test">
+                    </div>
+                    <div class="form-group custom-field-select">
+                        <label for="">Field Type</label>
+                        <select class="form-control">
+                          <option value="single-text">Single Line Text</option>
+                          <option value="para-text">Paragraph Text</option>
+                          <option value="drop-down">Drop Down</option>
+                          <option value="radio-buttons">Radio Buttons</option>
+                          <option value="adderss">Address</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group drop-down-instruction">
+                        <label for="">Field Options </label><small style="margin-left:5px;"><i>(Type each option and a separate line)</i></small>
+                        <textarea class="form-control" rows="4"></textarea>
+                    </div>
+                    <div class="form-group radio-button-instruction">
+                        <label for="">Field Options </label><small style="margin-left:5px;"><i>(Type each option and a separate line)</i></small>
+                        <textarea class="form-control" rows="4"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="">Instructions for Payer</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="">Make Required?</label><br/>
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineOptions" id="inlineRadio1" value="Yes"> Yes
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="inlineOptions" id="inlineRadio2" value="No"> No
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save Field</button>
+            </div>
+        </div>
+    </div>
+</div><!-- end popup -->
+	
+
+	<script type="text/javascript">
+		$(function () {
+			var $steps = $(".form-wizard .step"),
+				$buttons = $steps.find("[data-step]"),
+				$tabs = $(".header .steps .step"),
+				active_step = 0;
+
+			$buttons.click(function (e) {
+				e.preventDefault();
+
+				var step_index = $(this).data("step") - 1;
+				var in_fade_class = (step_index > active_step) ? "fadeInRightStep" : "fadeInLeftStep";
+				var out_fade_class = (in_fade_class === "fadeInRightStep") ? "fadeOutLeftStep" : "fadeOutRightStep";
+
+				var $out_step = $steps.eq(active_step);
+				$out_step.on(utils.animation_ends(), function () {
+					$out_step.removeClass("fadeInRightStep fadeInLeftStep fadeOutRightStep fadeOutLeftStep");
+				}).addClass(out_fade_class);
+
+				active_step = step_index;
+
+				$tabs.removeClass("active").filter(":lt(" + (active_step + 1) + ")").addClass("active");
+
+				$steps.removeClass("active");
+				$steps.eq(step_index).addClass("active animated " + in_fade_class);
+			});
+
+		});		
+		
+		
+	</script>
+</body>
+</html>

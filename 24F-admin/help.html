@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+	<title>24Fundraiser Admin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/compiled/theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/ionicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/compiled/customize.css" />
+
+	<!-- javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/vendor/select2.min.js"></script>
+	<script src="js/jquery.slimscroll.js"></script>
+	<script src="js/theme.js"></script>
+	<script src="js/custom.js"></script>
+
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div id="wrapper">
+		<div id="sidebar-default" class="main-sidebar">
+			<div class="current-user">
+				<a href="index.html" class="home"><i class="fa fa-home"></i></a>
+                <a href="help.html" class="help">Help</a>
+                <a href="account-profile.html" class="name">Account <i class="fa fa-chevron-down"></i></a>
+				<ul class="menu">
+					<li>
+						<a href="account-profile.html">Account settings</a>
+					</li>
+					<li>
+						<a href="account-billing.html">Billing</a>
+					</li>
+                    <li>
+						<a href="pricing.html">Pricing</a>
+					</li>
+					<li>
+						<a href="account-notifications.html">Notifications</a>
+					</li>
+					<li>
+						<a href="account-integrations.html">Integrations</a>
+					</li>
+					<li>
+						<a href="account-support.html">Help / Support</a>
+					</li>
+					<li>
+						<a href="signup.html">Sign out</a>
+					</li>
+				</ul>
+			</div>
+			<div class="inner-sidebar">
+			<div class="menu-section">
+				<h3>General</h3>
+				<ul>
+					<li>
+						<a href="index.html">
+							<i class="ion-android-earth"></i> 
+							<span>Dashboard</span>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>Donor Management</h3>
+				<ul>
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="ion-person-stalker"></i> <span>Members</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="members.html">All Members</a></li>
+							<li><a href="all-transactions.html">All Transactions</a></li>
+						</ul>
+					</li>
+										
+					<li>
+						<a href="account.html" data-toggle="sidebar">
+							<i class="fa fa-envelope"></i> <span>Mailbox</span>
+							<i class="fa fa-chevron-down"></i>
+						</a>
+						<ul class="submenu">
+							<li><a href="inbox-mail.html">Inbox</a></li>
+							<li><a href="email-templates.html">Email templates</a></li>							
+						</ul>
+					</li>
+				
+				</ul>
+			</div>
+			<div class="menu-section">
+				<h3>Campaigns</h3>
+				<ul>
+					<li>
+						<a href="payment.html">
+							<i class="fa fa-money"></i><span>Payment Pages </span>							
+						</a>						
+					</li>
+					<li>
+						<a href="#">
+							<i class="ion-usb"></i> <span>Peer-to-peer</span>
+						</a>						
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-ticket"></i> <span>Tickets</span>
+						</a>						
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-legal"></i> <span>Auctions</span>
+						</a>						
+					</li>
+				</ul>
+				<div class="step-progress">
+						<a href="steps.html" class="link">Steps to launch</a>
+						<div id="progress_bar" class="ui-progress-bar ui-container">
+							<div class="ui-progress" style="width: 40%;">
+								<span class="ui-label"><b class="value">40%</b></span>
+							</div><!-- .ui-progress -->
+						</div><!-- #progress_bar -->
+					</div><!--end step-progress-->
+			</div>
+			</div><!-- end inner-sidebar -->
+			<div class="bottom-menu hidden-sm">
+				<ul>
+					<li><a href="account-support.html"><i class="ion-help"></i></a></li>
+					<li>
+						<a href="inbox-mail.html">
+							<i class="ion-archive"></i>
+							<span class="flag"></span>
+						</a>
+						<ul class="menu">
+							<li><a href="#">5 unread messages</a></li>
+							<li><a href="#">12 tasks completed</a></li>
+							<!-- <li><a href="#">3 features added</a></li> -->
+						</ul>
+					</li>
+					<li><a href="signup.html"><i class="ion-log-out"></i></a></li>
+				</ul>
+			</div>
+		</div><!--main-sidebar-->
+        
+    <div id="content">
+        <div id="help" class="active-header"> <!-- remove .active-header class form this when u Activate Account -->
+			
+            <div class="activebar">
+            	<div class="active-inner clearfix">
+                    <a class="active-account btn btn-danger pull-left" href="pricing.html">
+                        <span>Activate Account</span>
+                    </a>
+                    <p>Explore 24Fundraiser for free. Activate your account when you're ready to accept payments. <a href="steps.html">Steps to launch</a></p>
+                </div>
+            </div>
+			<div class="menubar">
+				<div class="sidebar-toggler visible-xs">
+					<i class="ion-navicon"></i>
+				</div>
+				
+				<div class="page-title">
+					How can we help you?
+				</div>				
+			</div>
+
+			<div class="content-wrapper">
+				<div class="row page-controls">
+					<div class="col-lg-9">
+                                        <h3>Welcome to the 24Fundraiser Knowledge Center</h3>
+                                        <p>Search the database or click on a question to drop down the answer.</p>
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Search Knowledge Center..." class="form-control">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-primary"><i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <!-- /input-group -->
+                                        <br>
+                                        <div id="accordion" class="panel-group">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <a href="#collapseOne" data-parent="#accordion" data-toggle="collapse" class="collapsed">
+                                                        <h4 class="panel-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-collapse collapse" id="collapseOne" style="height: 0px;">
+                                                    <div class="panel-body">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean libero nibh, blandit nec nunc et, venenatis condimentum ipsum. Vivamus ullamcorper enim eget elit malesuada accumsan. Nam felis orci, tempus lacinia malesuada sit amet, blandit quis massa. Praesent ut lorem eleifend, viverra risus et, pellentesque orci. Fusce venenatis, dolor sit amet imperdiet tempus, tortor orci sagittis est, vitae pharetra est urna lobortis lorem. Vestibulum nisl felis, luctus vitae arcu in, mollis placerat magna. Curabitur ut iaculis orci. Curabitur lacinia urna id ante mattis, in viverra ligula auctor.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <a href="#collapseTwo" data-parent="#accordion" data-toggle="collapse" class="collapsed">
+                                                        <h4 class="panel-title">Aenean libero nibh, blandit nec nunc et?</h4>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-collapse collapse" id="collapseTwo">
+                                                    <div class="panel-body">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean libero nibh, blandit nec nunc et, venenatis condimentum ipsum. Vivamus ullamcorper enim eget elit malesuada accumsan. Nam felis orci, tempus lacinia malesuada sit amet, blandit quis massa. Praesent ut lorem eleifend, viverra risus et, pellentesque orci. Fusce venenatis, dolor sit amet imperdiet tempus, tortor orci sagittis est, vitae pharetra est urna lobortis lorem. Vestibulum nisl felis, luctus vitae arcu in, mollis placerat magna. Curabitur ut iaculis orci. Curabitur lacinia urna id ante mattis, in viverra ligula auctor.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <a href="#collapseThree" data-parent="#accordion" data-toggle="collapse" class="collapsed">
+                                                        <h4 class="panel-title">Venenatis condimentum ipsum. Vivamus ullamcorper enim eget elit malesuada accumsan?</h4>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-collapse collapse" id="collapseThree">
+                                                    <div class="panel-body">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean libero nibh, blandit nec nunc et, venenatis condimentum ipsum. Vivamus ullamcorper enim eget elit malesuada accumsan. Nam felis orci, tempus lacinia malesuada sit amet, blandit quis massa. Praesent ut lorem eleifend, viverra risus et, pellentesque orci. Fusce venenatis, dolor sit amet imperdiet tempus, tortor orci sagittis est, vitae pharetra est urna lobortis lorem. Vestibulum nisl felis, luctus vitae arcu in, mollis placerat magna. Curabitur ut iaculis orci. Curabitur lacinia urna id ante mattis, in viverra ligula auctor.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <a href="#collapseFour" data-parent="#accordion" data-toggle="collapse" class="collapsed">
+                                                        <h4 class="panel-title">Praesent ut lorem eleifend, viverra risus et, pellentesque orci?</h4>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-collapse collapse" id="collapseFour">
+                                                    <div class="panel-body">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean libero nibh, blandit nec nunc et, venenatis condimentum ipsum. Vivamus ullamcorper enim eget elit malesuada accumsan. Nam felis orci, tempus lacinia malesuada sit amet, blandit quis massa. Praesent ut lorem eleifend, viverra risus et, pellentesque orci. Fusce venenatis, dolor sit amet imperdiet tempus, tortor orci sagittis est, vitae pharetra est urna lobortis lorem. Vestibulum nisl felis, luctus vitae arcu in, mollis placerat magna. Curabitur ut iaculis orci. Curabitur lacinia urna id ante mattis, in viverra ligula auctor.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <a href="#collapseFive" data-parent="#accordion" data-toggle="collapse" class="collapsed">
+                                                        <h4 class="panel-title">Fusce venenatis, dolor sit amet imperdiet tempus?</h4>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-collapse collapse" id="collapseFive">
+                                                    <div class="panel-body">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean libero nibh, blandit nec nunc et, venenatis condimentum ipsum. Vivamus ullamcorper enim eget elit malesuada accumsan. Nam felis orci, tempus lacinia malesuada sit amet, blandit quis massa. Praesent ut lorem eleifend, viverra risus et, pellentesque orci. Fusce venenatis, dolor sit amet imperdiet tempus, tortor orci sagittis est, vitae pharetra est urna lobortis lorem. Vestibulum nisl felis, luctus vitae arcu in, mollis placerat magna. Curabitur ut iaculis orci. Curabitur lacinia urna id ante mattis, in viverra ligula auctor.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <a href="#collapseSix" data-parent="#accordion" data-toggle="collapse" class="collapsed">
+                                                        <h4 class="panel-title">Praesent tincidunt vestibulum ultricies?</h4>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-collapse collapse" id="collapseSix">
+                                                    <div class="panel-body">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean libero nibh, blandit nec nunc et, venenatis condimentum ipsum. Vivamus ullamcorper enim eget elit malesuada accumsan. Nam felis orci, tempus lacinia malesuada sit amet, blandit quis massa. Praesent ut lorem eleifend, viverra risus et, pellentesque orci. Fusce venenatis, dolor sit amet imperdiet tempus, tortor orci sagittis est, vitae pharetra est urna lobortis lorem. Vestibulum nisl felis, luctus vitae arcu in, mollis placerat magna. Curabitur ut iaculis orci. Curabitur lacinia urna id ante mattis, in viverra ligula auctor.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <a href="#collapseSeven" data-parent="#accordion" data-toggle="collapse" class="collapsed">
+                                                        <h4 class="panel-title">Proin at eros bibendum, blandit lacus id, volutpat libero?</h4>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-collapse collapse" id="collapseSeven">
+                                                    <div class="panel-body">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean libero nibh, blandit nec nunc et, venenatis condimentum ipsum. Vivamus ullamcorper enim eget elit malesuada accumsan. Nam felis orci, tempus lacinia malesuada sit amet, blandit quis massa. Praesent ut lorem eleifend, viverra risus et, pellentesque orci. Fusce venenatis, dolor sit amet imperdiet tempus, tortor orci sagittis est, vitae pharetra est urna lobortis lorem. Vestibulum nisl felis, luctus vitae arcu in, mollis placerat magna. Curabitur ut iaculis orci. Curabitur lacinia urna id ante mattis, in viverra ligula auctor.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <a href="#collapseEight" data-parent="#accordion" data-toggle="collapse" class="collapsed">
+                                                        <h4 class="panel-title">Vestibulum ultrices odio posuere erat sollicitudin, at laoreet erat tempor?</h4>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-collapse collapse" id="collapseEight">
+                                                    <div class="panel-body">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean libero nibh, blandit nec nunc et, venenatis condimentum ipsum. Vivamus ullamcorper enim eget elit malesuada accumsan. Nam felis orci, tempus lacinia malesuada sit amet, blandit quis massa. Praesent ut lorem eleifend, viverra risus et, pellentesque orci. Fusce venenatis, dolor sit amet imperdiet tempus, tortor orci sagittis est, vitae pharetra est urna lobortis lorem. Vestibulum nisl felis, luctus vitae arcu in, mollis placerat magna. Curabitur ut iaculis orci. Curabitur lacinia urna id ante mattis, in viverra ligula auctor.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <a href="#collapseNine" data-parent="#accordion" data-toggle="collapse" class="collapsed">
+                                                        <h4 class="panel-title">Sed pulvinar mi at purus adipiscing, sed laoreet mauris interdum?</h4>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-collapse collapse" id="collapseNine">
+                                                    <div class="panel-body">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean libero nibh, blandit nec nunc et, venenatis condimentum ipsum. Vivamus ullamcorper enim eget elit malesuada accumsan. Nam felis orci, tempus lacinia malesuada sit amet, blandit quis massa. Praesent ut lorem eleifend, viverra risus et, pellentesque orci. Fusce venenatis, dolor sit amet imperdiet tempus, tortor orci sagittis est, vitae pharetra est urna lobortis lorem. Vestibulum nisl felis, luctus vitae arcu in, mollis placerat magna. Curabitur ut iaculis orci. Curabitur lacinia urna id ante mattis, in viverra ligula auctor.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <a href="#collapseTen" data-parent="#accordion" data-toggle="collapse" class="collapsed">
+                                                        <h4 class="panel-title">Suspendisse vulputate ligula in felis semper mattis?</h4>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-collapse collapse" id="collapseTen">
+                                                    <div class="panel-body">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean libero nibh, blandit nec nunc et, venenatis condimentum ipsum. Vivamus ullamcorper enim eget elit malesuada accumsan. Nam felis orci, tempus lacinia malesuada sit amet, blandit quis massa. Praesent ut lorem eleifend, viverra risus et, pellentesque orci. Fusce venenatis, dolor sit amet imperdiet tempus, tortor orci sagittis est, vitae pharetra est urna lobortis lorem. Vestibulum nisl felis, luctus vitae arcu in, mollis placerat magna. Curabitur ut iaculis orci. Curabitur lacinia urna id ante mattis, in viverra ligula auctor.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <a href="#collapseEleven" data-parent="#accordion" data-toggle="collapse" class="collapsed">
+                                                        <h4 class="panel-title">Proin id purus urna. Proin a arcu sed orci laoreet pellentesque a et lectus?</h4>
+                                                    </a>
+                                                </div>
+                                                <div class="panel-collapse collapse" id="collapseEleven">
+                                                    <div class="panel-body">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean libero nibh, blandit nec nunc et, venenatis condimentum ipsum. Vivamus ullamcorper enim eget elit malesuada accumsan. Nam felis orci, tempus lacinia malesuada sit amet, blandit quis massa. Praesent ut lorem eleifend, viverra risus et, pellentesque orci. Fusce venenatis, dolor sit amet imperdiet tempus, tortor orci sagittis est, vitae pharetra est urna lobortis lorem. Vestibulum nisl felis, luctus vitae arcu in, mollis placerat magna. Curabitur ut iaculis orci. Curabitur lacinia urna id ante mattis, in viverra ligula auctor.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <p>For additional support please contact the support team directly.</p>
+                                        <dl>
+                                            <dt><i class="fa fa-phone"></i> Support Hotline:</dt>
+                                            <dd>1-844-217-1631</dd>
+                                            <dt><i class="fa fa-envelope"></i> Email Support:</dt>
+                                            <dd><a href="mailto:support@24fundraiser.com">support@24fundraiser.com</a>
+                                            </dd>
+                                            <dd>For billing questions, please contact <a href="mailto:billing@24fundraiser.com">billing@24fundraiser.com</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+								<div class="col-lg-3">
+                                        <h3>Email Support </h3>
+                                        <p>Please review our FAQ list to troubleshoot problems that you may be having. If you cannot find an answer to your questions, please email us and our technical support staff will contact you as soon as possible. </p>
+                                        
+                                        <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#contact-popup">Email Support</button>
+										<hr>
+                                        <h4>Categories</h4>
+                                        <ul class="nav nav-pills nav-stacked">
+                                            <li><a href="#">About Flex Admin</a>
+                                            </li>
+                                            <li><a href="#">Getting Started</a>
+                                            </li>
+                                            <li><a href="#">General Support</a>
+                                            </li>
+                                            <li><a href="#">Billing Issues</a>
+                                            </li>
+                                            <li><a href="#">Privacy</a>
+                                            </li>
+                                            <li><a href="#">Upgrading Your Plan</a>
+                                            </li>
+                                            <li><a href="#">Profile</a>
+                                            </li>
+                                            <li><a href="#">Work Groups</a>
+                                            </li>
+                                            <li><a href="#">User Management</a>
+                                            </li>
+                                            <li><a href="#">Your Account</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+								
+								
+				</div>
+			</div><!--content-wrapper -->
+		</div>
+	</div><!--#content -->
+</div><!--#wrapper -->
+
+<div class="modal fade" id="contact-popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Contact Us</h4>
+        </div>
+        <div class="modal-body clearfix">
+          <form class="form-horizontal">
+              <div class="form-group">
+                  <label for="inputName3" class="col-sm-2 control-label">Name</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputName3" placeholder="Name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputMsg3" class="col-sm-2 control-label">Message</label>
+                  <div class="col-sm-10">
+                      <textarea class="form-control" id="inputMsg3" rows="4"></textarea>
+                  </div>
+                </div>											 
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </div>
+                </div>
+              </form>										
+        </div>									  
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</body>
+</html>

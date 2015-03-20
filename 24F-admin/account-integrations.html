@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+	<title>24Fundraiser Admin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/compiled/theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/ionicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap-switch.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/compiled/customize.css" />
+
+	<!-- javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/jquery.slimscroll.js"></script>
+	<script src="js/vendor/bootstrap-switch.min.js"></script>
+	<script src="js/theme.js"></script>
+	<script src="js/custom.js"></script>
+
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div id="wrapper">
+		<div id="sidebar-default" class="main-sidebar">
+			<div class="current-user">
+				<a href="index.html" class="home"><i class="fa fa-home"></i></a>
+                <a href="help.html" class="help">Help</a>
+                <a href="account-profile.html" class="name">Account <i class="fa fa-chevron-down"></i></a>
+				<ul class="menu">
+					<li>
+						<a href="account-profile.html">Account settings</a>
+					</li>
+					<li>
+						<a href="account-billing.html">Billing</a>
+					</li>
+                    <li>
+						<a href="pricing.html">Pricing</a>
+					</li>
+					<li>
+						<a href="account-notifications.html">Notifications</a>
+					</li>
+					<li>
+						<a href="account-integrations.html">Integrations</a>
+					</li>
+					<li>
+						<a href="account-support.html">Help / Support</a>
+					</li>
+					<li>
+						<a href="signup.html">Sign out</a>
+					</li>
+				</ul>
+			</div>
+			<div class="inner-sidebar">
+				<div class="menu-section">
+					<h3>General</h3>
+					<ul>
+						<li>
+							<a href="index.html">
+								<i class="ion-android-earth"></i> 
+								<span>Dashboard</span>
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="menu-section">
+					<h3>Donor Management</h3>
+					<ul>
+						<li>
+							<a href="account.html" data-toggle="sidebar">
+								<i class="ion-person-stalker"></i> <span>Members</span>
+								<i class="fa fa-chevron-down"></i>
+							</a>
+							<ul class="submenu">
+								<li><a href="members.html">All Members</a></li>
+								<li><a href="all-transactions.html">All Transactions</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="account.html" data-toggle="sidebar">
+								<i class="fa fa-envelope"></i> <span>Mailbox</span>
+								<i class="fa fa-chevron-down"></i>
+							</a>
+							<ul class="submenu">
+								<li><a href="inbox-mail.html">Inbox</a></li>
+								<li><a href="email-templates.html">Email templates</a></li>
+								
+							</ul>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="menu-section">
+					<h3>Campaigns</h3>
+					<ul>
+						<li>
+							<a href="payment.html">
+								<i class="fa fa-money"></i><span>Payment Pages </span>							
+							</a>						
+						</li>
+						<li>
+							<a href="#">
+								<i class="ion-usb"></i> <span>Peer-to-peer</span>
+							</a>						
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-ticket"></i> <span>Tickets</span>
+							</a>						
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-legal"></i> <span>Auctions</span>
+							</a>						
+						</li>
+					</ul>
+					<div class="step-progress">
+						<a href="steps.html" class="link">Steps to launch</a>
+						<div id="progress_bar" class="ui-progress-bar ui-container">
+							<div class="ui-progress" style="width: 40%;">
+								<span class="ui-label"><b class="value">40%</b></span>
+							</div><!-- .ui-progress -->
+						</div><!-- #progress_bar -->
+					</div><!--end step-progress-->
+				</div>
+				
+			</div><!-- end inner-sidebar -->
+		</div><!-- main-sidebar -->
+
+		<div id="content"> 
+			<div id="account"  class="active-header"><!-- remove .active-header class form this when u Activate Account -->
+                <div class="activebar">
+                    <div class="active-inner clearfix">
+                        <a class="active-account btn btn-danger pull-left" href="pricing.html">
+                            <span>Activate Account</span>
+                        </a>
+                        <p>Explore 24Fundraiser for free. Activate your account when you're ready to accept payments. <a href="steps.html">Steps to launch</a></p>
+                    </div>
+                </div>
+    
+                <div id="sidebar">
+                    <div class="sidebar-toggler visible-xs">
+                        <i class="ion-navicon"></i>
+                    </div>
+                    
+                    <h3>My account</h3>
+                    <ul class="menu">
+                        <li>
+                            <a href="account-profile.html">
+                                <i class="ion-ios7-person-outline"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="account-organization.html">
+                                <i class="fa fa-briefcase"></i>
+                                Organization Info
+                            </a>
+                        </li>
+                        <li>
+                            <a href="account-billing.html">
+                                <i class="ion-card"></i>
+                                Billing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="account-notifications.html">
+                                <i class="ion-ios7-email-outline"></i>
+                                Notifications
+                            </a>
+                        </li>
+                        <li>
+                            <a href="account-integrations.html" class="active">
+                                <i class="ion-settings"></i>
+                                Integrations
+                            </a>
+                        </li>
+                        <li>
+                            <a href="account-support.html">
+                                <i class="ion-ios7-help-outline"></i>
+                                Support
+                            </a>
+                        </li>
+                        <li>
+                            <a href="invite-users.html">
+                                <i class="ion-person-add"></i>
+                                Invite Users 
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--#sidebar -->
+    
+                <div id="panel" class="notifications integrations">
+                    <h3>
+                        Payment Method Integration - <span>Accept payments by linking a payment gateway. <a href="#">Learn more</a></span>
+                    </h3>
+                    <div class="settings">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/payhub-logo.jpg" alt="Payhub" />
+                            </div>
+                            <div class="info">
+                                <h4>Payhub</h4> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                            </div>
+                            <a class="button" href="3rd-party-integration.html">
+                                <span><i class="wrench"></i> Install</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="settings active">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/payhub-logo-active.png" alt="Payhub" />
+                            </div>
+                            <div class="info">
+                                <h4>Payhub</h4> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                            </div>
+                            <a class="button" href="3rd-party-integration.html">
+                                <span><i class="wrench"></i> Active</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="settings">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/paypal-logo.jpg" alt="Paypal" />
+                            </div>
+                            <div class="info">
+                                <h4>Paypal</h4> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                            </div>
+                            <a class="button" href="3rd-party-integration.html">
+                                <span><i class="wrench"></i> Install</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="settings active">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/paypal-logo-active.png" alt="Paypal" />
+                            </div>
+                            <div class="info">
+                                <h4>Paypal</h4> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                            </div>
+                            <a class="button" href="3rd-party-integration.html">
+                                <span><i class="wrench"></i> Active</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="settings">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/authorize-logo.jpg" alt="Authorize" />
+                            </div>
+                            <div class="info">
+                                <h4>Authorize.net</h4> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                            </div>
+                            <a class="button" href="3rd-party-integration.html">
+                                <span><i class="wrench"></i> Install</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="settings active">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/authorize-logo-active.png" alt="Authorize" />
+                            </div>
+                            <div class="info">
+                                <h4>Authorize.net</h4> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                            </div>
+                            <a class="button" href="3rd-party-integration.html">
+                                <span><i class="wrench"></i> Active</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="settings">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/nmi-logo.jpg" alt="NMI" />
+                            </div>
+                            <div class="info">
+                                <h4>NMI</h4> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                            </div>
+                            <a class="button" href="3rd-party-integration.html">
+                                <span><i class="wrench"></i> Install</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="settings active">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/nmi-logo-active.png" alt="NMI" />
+                            </div>
+                            <div class="info">
+                                <h4>NMI</h4> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                            </div>
+                            <a class="button" href="3rd-party-integration.html">
+                                <span><i class="wrench"></i> Install</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="settings">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/tsys-logo.jpg" alt="TSYS" />
+                            </div>
+                            <div class="info">
+                                <h4>TSYS</h4> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                            </div>
+                            <a class="button" href="3rd-party-integration.html">
+                                <span><i class="wrench"></i> Install</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="settings active">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/tsys-logo-active.png" alt="TSYS" />
+                            </div>
+                            <div class="info">
+                                <h4>TSYS</h4> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                            </div>
+                            <a class="button" href="3rd-party-integration.html">
+                                <span><i class="wrench"></i> Active</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="settings">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/wePay-logo.jpg" alt="WePay" />
+                            </div>
+                            <div class="info">
+                                <h4>WePay</h4> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                            </div>
+                            <a class="button" href="3rd-party-integration.html">
+                                <span><i class="wrench"></i> Install</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="settings active">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/wePay-logo-active.png" alt="WePay" />
+                            </div>
+                            <div class="info">
+                                <h4>WePay</h4> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                            </div>
+                            <a class="button" href="3rd-party-integration.html">
+                                <span><i class="wrench"></i> Active</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="settings">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/securenet-logo.jpg" alt="SecureNet" />
+                            </div>
+                            <div class="info">
+                                <h4>SecureNet</h4> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                            </div>
+                            <a class="button" href="3rd-party-integration.html">
+                                <span><i class="wrench"></i> Install</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="settings active">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/securenet-logo-active.png" alt="SecureNet" />
+                            </div>
+                            <div class="info">
+                                <h4>SecureNet</h4> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                            </div>
+                            <a class="button" href="3rd-party-integration.html">
+                                <span><i class="wrench"></i> Active</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <h3>
+                        Donor Management Integration - <span>Pass data to your current donor management tool. <a href="#">Learn more</a></span>
+                    </h3>
+                    <div class="settings">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/salesforce-logo.jpg" alt="Salesforce" />
+                            </div>
+                            <div class="info">
+                                <h4>Salesforce</h4> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                            </div>
+                            <a class="button" href="3rd-party-integration.html">
+                                <span><i class="wrench"></i> Install</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="settings active">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/salesforce-logo-active.png" alt="Salesforce" />
+                            </div>
+                            <div class="info">
+                                <h4>Salesforce</h4> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.</p>
+                            </div>
+                            <a class="button" href="3rd-party-integration.html">
+                                <span><i class="wrench"></i> Active</span>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>
+                        Analytic Integrations - <span>Track activity on your payment forms. <a href="#">Learn more</a></span>
+                    </h3>
+                    <div class="settings">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/google-analytics-logo.jpg" alt="Google Analytics" />
+                            </div>
+                            <div class="info">
+                                <h4>Google Analytics</h4> 
+                                <p>Google Analytics helps you analyze visitor traffic and paint a complete picture of your audience and their needs. Track the routes people take to reach you and the devices they use to get there. Visualize how visitors interact with your site and your payment forms.</p>
+                            </div>
+                            <a class="button" href="google-analytics.html">
+                                <span><i class="wrench"></i> Install</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="settings active">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/google-analytics-logo-active.png" alt="Google Analytics" />
+                            </div>
+                            <div class="info">
+                                <h4>Google Analytics</h4> 
+                                <p>Google Analytics helps you analyze visitor traffic and paint a complete picture of your audience and their needs. Track the routes people take to reach you and the devices they use to get there. Visualize how visitors interact with your site and your payment forms.</p>
+                            </div>
+                            <a class="button" href="google-analytics.html">
+                                <span><i class="wrench"></i> Active</span>
+                            </a>
+                        </div>
+                    </div>
+                
+                    <h3>
+                        Email Marketing Integrations - <span>Add a donor to a mailing list on a successful checkout. <a href="#">Learn more</a></span>
+                    </h3>
+                    <div class="settings">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/aweber-logo.jpg" alt="AWeber" />
+                            </div>
+                            <div class="info">
+                                <h4>AWeber</h4> 
+                                <p>AWeber has helped over 120,000 businesses get their email newslatters where they need to go. AWeber allows you to spend less time marketing and more time growing your business with automated follow-ups and quick, easy design tools.</p>
+                            </div>
+                            <a class="button" href="#">
+                                <span><i class="wrench"></i> Install</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="settings active">
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/aweber-logo-active.png" alt="AWeber" />
+                            </div>
+                            <div class="info">
+                                <h4>AWeber</h4> 
+                                <p>AWeber has helped over 120,000 businesses get their email newslatters where they need to go. AWeber allows you to spend less time marketing and more time growing your business with automated follow-ups and quick, easy design tools.</p>
+                            </div>
+                            <a class="button" href="#">
+                                <span><i class="wrench"></i> Active</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="settings">					
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/constant-contact-logo.jpg" alt="Constant Contact" />
+                            </div>
+                            <div class="info">
+                                <h4>Constant Contact</h4> 
+                                <p>After 15 years of helping small businesses and nonprofits successfully use email marketing, Constant Contact knows it works and can help make it work for you, too. Whether you're looking to engage or grow your audience, drive sales or donations, or increase your brand awareness, Constant Contact is designed for your success.</p>
+                            </div>
+                            <a class="button" href="#">
+                                <span><i class="wrench"></i> Install</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="settings active">					
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/constant-contact-logo-active.png" alt="Constant Contact" />
+                            </div>
+                            <div class="info">
+                                <h4>Constant Contact</h4> 
+                                <p>After 15 years of helping small businesses and nonprofits successfully use email marketing, Constant Contact knows it works and can help make it work for you, too. Whether you're looking to engage or grow your audience, drive sales or donations, or increase your brand awareness, Constant Contact is designed for your success.</p>
+                            </div>
+                            <a class="button" href="#">
+                                <span><i class="wrench"></i> Active</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="settings">					
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/mailChimp-logo.jpg" alt="MailChimp" />
+                            </div>
+                            <div class="info">
+                                <h4>MailChimp</h4> 
+                                <p>More than 4 million people use MailChimp to create, send, and track email newsletters. Whether you're self-employed, you manage projects for clients, or you work for a Fortune 500 company, MailChimp has features that can suit your email-marketing  needs.</p>
+                            </div>
+                            <a class="button" href="#">
+                                <span><i class="wrench"></i> Install</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="settings active">					
+                        <div class="step clearfix">
+                            <div class="image">
+                                <img src="images/logos/mailChimp-logo-active.png" alt="MailChimp" />
+                            </div>
+                            <div class="info">
+                                <h4>MailChimp</h4> 
+                                <p>More than 4 million people use MailChimp to create, send, and track email newsletters. Whether you're self-employed, you manage projects for clients, or you work for a Fortune 500 company, MailChimp has features that can suit your email-marketing  needs.</p>
+                            </div>
+                            <a class="button" href="#">
+                                <span><i class="wrench"></i> Active</span>
+                            </a>
+                        </div>
+                    </div>
+               </div><!-- #panel -->
+          </div><!--#acccount -->
+        </div><!-- #content -->
+    </div><!--#wrapper -->

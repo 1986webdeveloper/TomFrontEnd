@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+	<title>24Fundraiser Admin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/compiled/theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/ionicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/compiled/customize.css" />
+
+	<!-- javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/jquery.slimscroll.js"></script>
+	<script src="js/vendor/zoomerang.js"></script>
+	<script src="js/theme.js"></script>
+	<script src="js/custom.js"></script>
+
+
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div id="wrapper">
+		<div id="sidebar-default" class="main-sidebar">
+			<div class="current-user">
+				<a href="index.html" class="home"><i class="fa fa-home"></i></a>
+                <a href="help.html" class="help">Help</a>
+                <a href="account-profile.html" class="name">Account <i class="fa fa-chevron-down"></i></a>
+				<ul class="menu">
+					<li>
+						<a href="account-profile.html">Account settings</a>
+					</li>
+					<li>
+						<a href="account-billing.html">Billing</a>
+					</li>
+                    <li>
+						<a href="pricing.html">Pricing</a>
+					</li>
+					<li>
+						<a href="account-notifications.html">Notifications</a>
+					</li>
+					<li>
+						<a href="account-integrations.html">Integrations</a>
+					</li>
+					<li>
+						<a href="account-support.html">Help / Support</a>
+					</li>
+					<li>
+						<a href="signup.html">Sign out</a>
+					</li>
+				</ul>
+			</div>
+			<div class="inner-sidebar">
+				<div class="menu-section">
+					<h3>General</h3>
+					<ul>
+						<li>
+							<a href="index.html">
+								<i class="ion-android-earth"></i> 
+								<span>Dashboard</span>
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="menu-section">
+					<h3>Donor Management</h3>
+					<ul>
+						<li>
+							<a href="account.html" data-toggle="sidebar">
+								<i class="ion-person-stalker"></i> <span>Members</span>
+								<i class="fa fa-chevron-down"></i>
+							</a>
+							<ul class="submenu">
+								<li><a href="members.html">All Members</a></li>
+								<li><a href="all-transactions.html">All Transactions</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<a href="account.html" data-toggle="sidebar">
+								<i class="fa fa-envelope"></i> <span>Mailbox</span>
+								<i class="fa fa-chevron-down"></i>
+							</a>
+							<ul class="submenu">
+								<li><a href="inbox-mail.html">Inbox</a></li>
+								<li><a href="email-templates.html">Email templates</a></li>
+								
+							</ul>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="menu-section">
+					<h3>Campaigns</h3>
+					<ul>
+						<li>
+							<a href="payment.html">
+								<i class="fa fa-money"></i><span>Payment Pages </span>							
+							</a>						
+						</li>
+						<li>
+							<a href="#">
+								<i class="ion-usb"></i> <span>Peer-to-peer</span>
+							</a>						
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-ticket"></i> <span>Tickets</span>
+							</a>						
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-legal"></i> <span>Auctions</span>
+							</a>						
+						</li>
+					</ul>
+					<div class="step-progress">
+						<a href="steps.html" class="link">Steps to launch</a>
+						<div id="progress_bar" class="ui-progress-bar ui-container">
+							<div class="ui-progress" style="width: 40%;">
+								<span class="ui-label"><b class="value">40%</b></span>
+							</div><!-- .ui-progress -->
+						</div><!-- #progress_bar -->
+					</div><!--end step-progress-->
+				</div>
+			</div><!-- end inner-sidebar -->
+			<div class="bottom-menu hidden-sm">
+				<ul>
+					<li><a href="account-support.html"><i class="ion-help"></i></a></li>
+					<li>
+						<a href="inbox-mail.html">
+							<i class="ion-archive"></i>
+							<span class="flag"></span>
+						</a>
+						<ul class="menu">
+							<li><a href="#">5 unread messages</a></li>
+							<li><a href="#">12 tasks completed</a></li>
+							<!-- <li><a href="#">3 features added</a></li> -->
+						</ul>
+					</li>
+					<li><a href="signup.html"><i class="ion-log-out"></i></a></li>
+				</ul>
+			</div>
+		</div><!--main-sidebar-->
+
+		<div id="content">
+			<div  id="email-templates" class="active-header"> <!-- remove .active-header class form this when u Activate Account -->
+            <div class="activebar">
+            	<div class="active-inner clearfix">
+                    <a class="active-account btn btn-danger pull-left" href="pricing.html">
+                        <span>Activate Account</span>
+                    </a>
+                    <p>Explore 24Fundraiser for free. Activate your account when you're ready to accept payments. <a href="steps.html">Steps to launch</a></p>
+                </div>
+            </div>
+			<div class="menubar">
+				<div class="sidebar-toggler visible-xs">
+					<i class="ion-navicon"></i>
+				</div>
+
+				<div class="page-title">
+					Email templates
+				</div>
+			</div>
+
+			<div class="content-wrapper clearfix">
+
+				<h3 class="header">
+					These email templates are included with theme, the html versions are only available after purchase.
+				</h3>
+
+				<div class="emails">
+					<div class="email">
+						<div class="wrapper">
+							<i class="fa fa-search-plus"></i>
+							<img src="images/emails/welcome.png" />
+						</div>
+						<div class="name">
+							Welcome Email
+						</div>
+					</div>
+					<div class="email">
+						<div class="wrapper">
+							<i class="fa fa-search-plus"></i>
+							<img src="images/emails/notification.png" />
+						</div>
+						<div class="name">
+							Email Notification
+						</div>
+					</div>
+					<div class="email">
+						<div class="wrapper">
+							<i class="fa fa-search-plus"></i>
+							<img src="images/emails/invoice.jpg" />
+						</div>
+						<div class="name">
+							Invoice Email
+						</div>
+					</div>
+					<div class="email">
+						<div class="wrapper">
+							<i class="fa fa-search-plus"></i>
+							<img src="images/emails/activation.png" />
+						</div>
+						<div class="name">
+							Account Activation Email
+						</div>
+					</div>
+				</div>
+			</div><!--content-wrapper -->
+			</div>
+	</div><!--#content -->
+</div><!--#wrapper -->
+
+	
+
+	<script type="text/javascript">
+		$(function () {
+			Zoomerang
+                .config({
+                    maxHeight: 650,
+                    maxWidth: 650,
+                    bgColor: '#000',
+                    bgOpacity: .8
+                })
+                .listen('.email img');
+
+            $(".fa-search-plus").click(function () {
+            	var $el = $(this).siblings("img");
+            	Zoomerang.open($el[0]);
+            });
+		});		
+	</script>
+
+</body>
+</html>
